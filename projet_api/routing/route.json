@@ -1,0 +1,66 @@
+[{
+    "path": "/User/Signin",
+    "method": "POST",
+    "controller": "User",
+    "action": "signin"
+}, {
+    "path": "/User/Login",
+    "method": "POST",
+    "controller": "User",
+    "action": "login"
+}, {
+    "path": "/User",
+    "method": "GET",
+    "controller": "User",
+    "action": "getAll",
+    "auth": true
+}, {
+    "path": "/User/([0-9]*)",
+    "method": "GET",
+    "controller": "User",
+    "action": "getOne",
+    "param": ["id"]
+}, {
+    "path": "/User",
+    "method": "POST",
+    "controller": "User",
+    "action": "create"
+}, {
+    "path": "/User/([0-9]*)",
+    "method": "PUT",
+    "controller": "User",
+    "action": "update",
+    "param": ["id"]
+}, {
+    "path": "/User",
+    "method": "DELETE",
+    "controller": "User",
+    "action": "delete"
+}, {
+    "path": "/Post",
+    "method": "GET",
+    "controller": "Post",
+    "action": "getAll"
+}, {
+    "path": "/Post/([0-9]*)",
+    "method": "GET",
+    "controller": "Post",
+    "action": "getOne"
+}, {
+    "path": "/Post",
+    "method": "POST",
+    "controller": "Post",
+    "action": "create"
+}, {
+    "path": "/Post",
+    "method": "PUT",
+    "controller": "Post",
+    "action": "update"
+}, {
+    "path": "/Post",
+    "method": "DELETE",
+    "controller": "Post",
+    "action": "delete"
+}
+
+]

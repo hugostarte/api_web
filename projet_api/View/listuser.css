@@ -1,0 +1,14 @@
+.userlist{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px 1% ;
+    flex-wrap: wrap;
+}
+
+.user{
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: #D0D0D0;
+    border-radius: 8px;
+    width: 30%;
+}

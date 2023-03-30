@@ -1,0 +1,29 @@
+{
+    "id": 6,
+    "list": {
+        "1": {
+            "id": 2,
+            "firstname": "Aurélien",
+            "lastname": "Vaast",
+            "birthday": "2000-01-01"
+        },
+        "2": {
+            "id": 3,
+            "firstname": "Jules",
+            "lastname": "Dupuis",
+            "birthday": "1995-05-08"
+        },
+        "3": {
+            "id": 4,
+            "firstname": "Jean",
+            "lastname": "Delaporte",
+            "birthday": "1979-05-11"
+        },
+        "4": {
+            "firstname": "Frederic",
+            "lastname": "Dubois",
+            "birthday": "1955-08-03",
+            "id": 6
+        }
+    }
+}
