@@ -61,12 +61,12 @@ class CommentController extends Controller
         
     }
 
-    function delete($id)
+     function delete($id)
     {
         if ($this->commentManager->delete($id)) {
-            $this->JSONMessage("Post supprimé");
+            $this->JSONMessage("Commentaire supprimé");
         } else {
-            $this->JSONMessage("Post non trouvé");
+            $this->JSONMessage("Commentaire non trouvé");
         }
     }
     
