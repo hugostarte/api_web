@@ -15,11 +15,9 @@ class UserController extends Controller
 
     function getAll()
     {
-        $listuser = $this->userManager->getAll();
-        $this->addViewParams("users",$listuser);
-        $this->View("listuser");
-        
-        
+        // $listuser = $this->userManager->getAll();
+        // $this->addViewParams("users",$listuser);
+        // $this->View("listuser");
         $this->JSON($this->userManager->getAll());
     }
 
