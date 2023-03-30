@@ -26,7 +26,7 @@ class PostController extends Controller
     {
         $this->JSON($this->postManager->getOne($id));
 
-        $listcomment = $this->commentManager->getOne($id);
+        $listcomment = $this->commentManager->getAllComment($id);
         $this->addViewParams("comment",$listcomment);
         $this->View("listpost");
     }

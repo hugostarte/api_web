@@ -9,6 +9,7 @@ class Post extends Model
     {
         parent::__construct("post");
     }
+   
 }
 
 
