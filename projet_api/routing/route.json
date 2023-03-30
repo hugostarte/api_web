@@ -61,6 +61,31 @@
     "method": "DELETE",
     "controller": "Post",
     "action": "delete"
+}, {
+    "path": "/Post/([0-9]*)/Comment/([0-9]*)",
+    "method": "GET",
+    "controller": "Comment",
+    "action": "getOne"
+}, {
+    "path": "/Post/([0-9]*)/Comment",
+    "method": "GET",
+    "controller": "Comment",
+    "action": "getAll"
+}, {
+    "path": "/Post/([0-9]*)/Comment",
+    "method": "POST",
+    "controller": "Comment",
+    "action": "create"
+}, {
+    "path": "/Post/([0-9]*)/Comment",
+    "method": "PUT",
+    "controller": "Comment",
+    "action": "update"
+}, {
+    "path": "/Post/([0-9]*)/Comment",
+    "method": "DELETE",
+    "controller": "Comment",
+    "action": "delete"
 }
 
 ]
