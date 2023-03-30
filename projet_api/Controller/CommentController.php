@@ -10,13 +10,14 @@ class CommentController extends Controller
 
     public function __construct()
     {
-        $this->commentManager = new \Model\Post();
+        $this->commentManager = new \Model\Comment();
+        
     }
 
     function getAll()
     {
         $this->JSON($this->commentManager->getAll());
-        $listuser = $this->commentManager->getAll();
+        $listcomment = $this->commentManager->getAll();
         $this->addViewParams("comment",$listcomment);
         $this->View("listcomment");
     }
@@ -24,7 +25,7 @@ class CommentController extends Controller
     function getOne($id)
     {
         $this->JSON($this->commentManager->getOne($id));
-        $this->JSON($this->commentManager->getComments($id)); 
+        $this->JSON($this->commentManager->getOne($id));
     }
 
     function create()
@@ -61,7 +62,7 @@ class CommentController extends Controller
         
     }
 
-     function delete($id)
+    function delete($id)
     {
         if ($this->commentManager->delete($id)) {
             $this->JSONMessage("Commentaire supprimé");
