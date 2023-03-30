@@ -75,17 +75,20 @@
     "path": "/Post/([0-9]*)/Comment",
     "method": "POST",
     "controller": "Comment",
-    "action": "create"
+    "action": "create",
+    "auth": true
 }, {
     "path": "/Post/([0-9]*)/Comment",
     "method": "PUT",
     "controller": "Comment",
-    "action": "update"
+    "action": "update",
+    "auth": true
 }, {
     "path": "/Post/([0-9]*)/Comment",
     "method": "DELETE",
     "controller": "Comment",
-    "action": "delete"
+    "action": "delete",
+    "auth": true
 }
 
 ]
