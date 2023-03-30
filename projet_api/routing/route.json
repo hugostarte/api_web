@@ -55,12 +55,15 @@
     "path": "/Post",
     "method": "PUT",
     "controller": "Post",
-    "action": "update"
+    "action": "update",
+    "auth": true
 }, {
     "path": "/Post",
     "method": "DELETE",
     "controller": "Post",
-    "action": "delete"
+    "action": "delete",
+    "auth": true
+    
 }, {
     "path": "/Post/([0-9]*)/Comment/([0-9]*)",
     "method": "GET",
