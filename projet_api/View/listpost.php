@@ -11,11 +11,12 @@
 
 <body>
     <div class="postlist">
-        <?php foreach ($users as $user) { ?>
-            <div class="user">
-                <div class="firstname"><?= $user->firstname; ?></div>
-                <div class="lastname"><?= $user->lastname; ?></div>
-                <div class="birthday"><?= $user->birthday; ?></div>
+        <?php foreach ($posts as $post) { ?>
+            <div class="post">
+                <div class="firstname"><?= $post->firstname; ?></div>
+                <div class="lastname"><?= $post->lastname; ?></div>
+                <div class="date"><?= $post->postdate; ?></div>
+                <div class="content"><?= $post->content; ?></div>        
             </div>
         <?php } ?>
     </div>
