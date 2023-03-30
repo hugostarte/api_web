@@ -7,16 +7,17 @@ use stdClass;
 class PostController extends Controller
 {
     private $postManager;
+    private $commentManager;
 
     public function __construct()
     {
         $this->postManager = new \Model\Post();
+        $this->commentManager = new \Model\Comment();
     }
 
     function getAll()
     {
-        $this->JSON($this->postManager->getAll());
-        $listuser = $this->userManager->getAll();
+        $listpost = $this->postManager->getAll();
         $this->addViewParams("post",$listpost);
         $this->View("listpost");
     }
@@ -24,7 +25,10 @@ class PostController extends Controller
     function getOne($id)
     {
         $this->JSON($this->postManager->getOne($id));
-        $this->JSON($this->postManager->getComments($id)); 
+
+        $listcomment = $this->commentManager->getOne($id);
+        $this->addViewParams("comment",$listcomment);
+        $this->View("listcomment");
     }
 
     function create()
@@ -68,7 +72,7 @@ class PostController extends Controller
             $this->JSONMessage("Post non trouvé");
         }
     }
-    
+
 
 
    
